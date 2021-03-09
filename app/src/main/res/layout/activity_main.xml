@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@color/white"
+        app:cardBackgroundColor="#fff"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:alpha=".25"
+            android:background="@drawable/ic_android_black_24dp" />
+
+        <TextView
+            android:id="@+id/tv_temp"
+            android:layout_width="170dp"
+            android:layout_height="125dp"
+            android:layout_marginLeft="65dp"
+            android:text="270"
+            android:textSize="100sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="235dp"
+            android:text="O"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_feels_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="145dp"
+            android:text="feelslike"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="176dp"
+            android:text="City"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_latitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="200dp"
+            android:text="Latitude" />
+
+        <TextView
+            android:id="@+id/tv_longtitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="220dp"
+            android:text="Longtitude" />
+
+        <TextView
+            android:id="@+id/tv_altitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="240dp"
+            android:text="Altitude" />
+
+        <TextView
+            android:id="@+id/tv_velocity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="260dp"
+            android:text="Velocity" />
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
